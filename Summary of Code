@@ -1,0 +1,6 @@
+1- Standardized Data.
+2- For prediction I used this equation https://imgur.com/a/Y98XxNC Eq.1.
+3- Added (lambda*L2) to Eq.1 where: lamda is hyperparameter and L2 is L2 norm.
+4- Differentiated Eq.1 to use in SGD https://imgur.com/a/IQzVTVe Eq.2.
+5- But Eq.2 might give math range error because it is negative, to overcome this we take absolute of it i.e remove negative sign from Eq.2. We get https://imgur.com/wAh6OeG Eq.3
+6- For update rule we use: w = w - lr * Eq.3, where: w is Weight Vector and lr is Learing Rate
